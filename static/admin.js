@@ -24,8 +24,8 @@ var dataPoints = [
   Pusher.logToConsole = true;
   
   // Configure Pusher instance
-  var pusher = new Pusher('4580dd45c06697418063', {
-      cluster: 'mt1',
+  var pusher = new Pusher('de38df0577147fbbd89c', {
+      cluster: 'us2',
       forceTLS: true
   });
   

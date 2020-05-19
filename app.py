@@ -11,10 +11,10 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 #pusher = Pusher(app_id=u'953695', key=u'de38df0577147fbbd89c', secret=u'1f2af708dafe2808e063', cluster=u'us2')
 
-pusher = Pusher(app_id='958808',
-  key='4580dd45c06697418063',
-  secret='2deb08fe56e6665888e7',
-  cluster='mt1',
+pusher = Pusher(app_id='953695',
+  key='de38df0577147fbbd89c',
+  secret='1f2af708dafe2808e063',
+  cluster='us2',
   ssl=True
 )
 
@@ -44,5 +44,4 @@ def vote():
 if __name__ == '__main__':
     main()
     app.run(debug=True, host='0.0.0.0', port=5000)
-#   app.run(debug=True)
-    
+#   app.run(debug=True) 

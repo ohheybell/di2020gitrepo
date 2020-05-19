@@ -12,7 +12,7 @@ pollMembers.forEach((pollMember, index) => {
 
   // Sends a POST request to the server using axios
 var handlePoll = function(member) {
-  axios.post('http://144.217.88.113:5000/vote', {member: member})
+  axios.post('http://127.0.0.1:5000/vote', {member: member})
   .then((data) => {
     console.log('data sent')
   })
@@ -20,8 +20,8 @@ var handlePoll = function(member) {
 
   
     // Configure Pusher instance
-    var pusher = new Pusher('4580dd45c06697418063', {
-        cluster: 'mt1',
+    var pusher = new Pusher('de38df0577147fbbd89c', {
+        cluster: 'us2',
         forceTLS: true
       });
       
