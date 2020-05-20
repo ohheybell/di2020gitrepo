@@ -12,4 +12,5 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
 #ENTRYPOINT ["python"]
+#CMD ["./build_wrapper.sh"]
 CMD ["./run_wrapper.sh"]
